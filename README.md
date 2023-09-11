@@ -10,4 +10,4 @@ Project Member:
 - Ni Luh Eka Suryaningsih
 - Nurul Syahkina Hr
 
-Project: Introducing Care Fit's E-commerce Adventure – your go-to hub for all things healthy! From nutritious foods to top-notch exercise gear, we've got it all. Explore, pick, and order fresh goodies and workout essentials from the comfort of your couch!
+Project: Introducing Care Fit's E-commerce – your go-to hub for all things healthy! From nutritious foods to top-notch exercise gear, we've got it all. Explore, pick, and order fresh goodies and workout essentials from the comfort of your couch!
