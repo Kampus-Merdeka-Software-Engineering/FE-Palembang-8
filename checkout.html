@@ -5,23 +5,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="main container">
         <!--header-->
            <header class="header container">
-               <div class="logo">
+               <figure class="logo">
                     <img src="images/logo carefit.png">
-                </div>
+                </figure>
                <h1 class="checkout>Checkout</h1>
            </header> 
-        <!--main-->
+        <!--main--> 
+            <!--alamat-->
             <section>
-                   <div></div>
+                   <div class="alamat">
+                       <figure class="logo">
+                            <img src="images/icon_location.png">
+                        </figure>
+                       <h2><b>Alamat Pengiriman</b></h2>
+                       <h3>Fairuz Jawharah</h3>
+                       <h4>085755145559</h4>
+                       <p>Jl. Sedayu V, Kec. Krembangan, Kota SBY, Jawa Timur, 60178.</p>
+                   </div>
             </section>
+            <!--barang-->
             <article>
-                   
+                <div class="mainproduk">
+                <div class="headerproduk">
+                    <h2 class="headerpesanan"><b>Produk Pesanan</b></h2>
+                    <div class="jumlah">Jumlah</div>
+                    <div class="jumlah">Harga Satuan</div>
+                    </div>
+                <div class="produk">
+                    <figure class="logo">
+                        <img src="images/smartwatch.png">
+                    </figure>
+                    <div class="details">
+                        <h3 class="namaproduk">Smartwatch</h3>
+                        <div class="jumlahproduk1">1</div>
+                        <div class="hargaproduk1">Rp 880.000</div>
+                    </div>
+                    </div>
+                </div>
             </article>
+            <!--pengiriman-->
+            <section class="pengiriman">
+                <h3>Pilih Opsi Pengiriman</h3>
+                 <div class="dropdown">
+                      <button class="dropbtn" onclick="myFunction()">Dropdown
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                    <div class="dropdown-content1">
+                        <figure class="logo"><img src="images/jne.png"></figure>
+                        <figure class="logo"><img src="images/jnt.png"></figure>
+                </div>
+              </div>
+            </section>
+            <!--pembayaran-->
+            <aside class="pembayaran">
+                <h3>Pilih Opsi Pengiriman</h3>
+                <form action=#>
+                      <input type="radio" id="bca" name="bank" value="BCA">
+                      <label for="BCA">BCA</label><br>
+                      <input type="radio" id="bri" name="bank" value="BRI">
+                      <label for="BRI">BRI</label><br>
+                      <input type="radio" id="bri" name="bank" value="BSI">
+                      <label for="BSI">BSI</label>
+            </aside>
+            <!--total-->
+            <section>
+                Subtotal
+            </section>
         <!--footer-->
             <footer class="footer">
                 <div class="container">
