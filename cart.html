@@ -7,54 +7,99 @@
     <link rel="stylesheet" href="cart.css">
 </head>
 <body>
-<div class="main container">
-  <header>
+    <!-- HEADER -->
+<div class="main_container">
+  <nav class="header_content">
     <figure class ="logocarefit">
-      <img src="images/logo carefit.png">
+      <img src="images/logo carefit.png" class="logo_header">
     </figure>
-    <div class="search-container">
+    <div class="search">
         <form action="#">
-        <input type="text" placeholder="Cari di Keranjang" name="search">
+        <input type="text" placeholder="Cari di Keranjang" class="search_box">
+        <button class="search-btn">search</button>
         </form>
-    <div class="profile">
-        <button onclick="href='profile.html';"><img src="images/profile.png"></button>
-        </div>
-  </header>
-  <h1 class="keranjangbelanja">Keranjang Belanja</h1>
-  <section class="pilih semua">
-    <form action=#>
-    <input type="checkbox" id="pilihsemua" name="pilihsemua" value="pilihsemua">
-    <label for="pilihsemua">Pilih Semua</label>
-    </form>
-  </section>
-  <article class="produk1">
-     <form action=#>
-      <input type="checkbox" id="pilihan1" name="pilihan1" value="produk1">
-      <label for="pilihsemua">Pilih Semua</label>
-     </form>
-      <figure class="produk1">
-        <img src="images/">
-      </figure>
-      <h3 class=:smartwatch">Smartwatch</h3>
-      <p>Rp 880.000</p>
-    <div class="number">
-	    <span class="minus">-</span>
-	    <input type="text" value="1"/>
-	    <span class="plus">+</span>
     </div>
-  </article>
-  <aside>
-    <h2>Ringkasan Belanja</h2>
-    <p>Total Barang</p>
-    <p>Total Harga</p>
-    <p>Total Harga</p>
-    <form action="href='transation.html';">
-         <button type="submit">Click me</button>
-      </form>
-  </aside>
-	
-	      <footer class="footer">
-            <div class="container">
+    <div class="profile">
+        <button onclick="href='profile.html';">
+        <img src="images/profile.png">
+        </button>
+    </div>
+</nav>
+  <!-- CONTENT KERANJANG -->
+  
+  <h1 class="keranjangbelanja">Keranjang Belanja</h1>
+  
+  <div class = "full_section" >
+    <div class="left_content">
+        <section class="pilih_semua">
+            <form action=#>
+            <input type="checkbox" id="pilihsemua" name="pilihsemua" value="pilihsemua">
+            <label for="pilihsemua">Pilih Semua</label>
+            </form>
+          </section>
+        <article class="produk1">
+            <form action=#>
+             <input type="checkbox" id="pilihan1" name="pilihan1" value="produk1">
+             <label for="Toko">Toko</label>
+            </form>
+             <figure class="produk1">
+               <img src="images/">
+             </figure>
+             <h3 class=:smartwatch">Smartwatch</h3>
+             <p>Rp 880.000</p>
+           <div class="number">
+               <span class="minus">-</span>
+               <input type="text" value="1"/>
+               <span class="plus">+</span>
+           </div>
+         </article>
+         <article class="produk2">
+            <form action=#>
+             <input type="checkbox" id="pilihan1" name="pilihan1" value="produk1">
+             <label for="Toko">Toko</label>
+            </form>
+             <figure class="produk1">
+               <img src="images/">
+             </figure>
+             <h3 class=:smartwatch">Smartwatch</h3>
+             <p>Rp 880.000</p>
+           <div class="number">
+               <span class="minus">-</span>
+               <input type="text" value="1"/>
+               <span class="plus">+</span>
+           </div>
+         </article>
+         <article class="produk3">
+            <form action=#>
+             <input type="checkbox" id="pilihan1" name="pilihan1" value="produk1">
+             <label for="Toko">Toko</label>
+            </form>
+             <figure class="produk1">
+               <img src="images/">
+             </figure>
+             <h3 class=:smartwatch">Smartwatch</h3>
+             <p>Rp 880.000</p>
+           <div class="number">
+               <span class="minus">-</span>
+               <input type="text" value="1"/>
+               <span class="plus">+</span>
+           </div>
+         </article>
+      </div>
+      <aside class = "right_content">
+        <h2>Ringkasan Belanja</h2>
+        <p>Total Barang</p>
+        <p>Total Harga</p>
+        <p>Total Harga</p>
+        <form action="href='transation.html';">
+             <button type="submit">Click me</button>
+          </form>
+      </aside>
+  </div>
+
+	<!-- FOOTER -->
+	    <footer class="footer">
+            <div class="footer_container">
                 <div class="row">
                     <div class="col">
                         <h4>Care-Fit</h4>
