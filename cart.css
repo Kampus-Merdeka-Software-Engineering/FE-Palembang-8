@@ -43,29 +43,28 @@ body {
 }
 
 .search {
-    width: 800px;
+    width: 500px;
     display: flex;
+    flex-direction: row;
     margin-top: auto;
-    margin-right: 20px;
-    margin-left: 500px;
+    margin-left: 400px;
     margin-bottom:auto
 }
 
 .search_box {
-    width: 80%;
-    height: auto;
+    width: 300px;
+    height: 30px;
     padding: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border: 1px solid #d1d1d1;
+    border-radius: 30px;
+    border: 1px solid #000000;
     text-transform: capitalize;
-    background: none;
+    background: #FFFFFF;
     color: #a9a9a9;
     outline: none;
 }
 
 .search_btn {
-    width: 20%;
+    width: 200px;
     height: auto;
     padding: 10px 20px;
     border: none;
@@ -92,9 +91,12 @@ body {
 
 .keranjangbelanja {
     width: 100%;
-    height: 100px;
+    height: 80px;
     margin-top: 35px;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -106,7 +108,8 @@ body {
 }
 
 .left_content {
-    margin-top: 0;
+  width: 600px;
+  margin-top: 0;
   padding: 50px;
   margin-left: 50px;
   display: flex;
@@ -115,39 +118,114 @@ body {
 
 
 .pilih_semua {
-    width: 600px;
-    height: 120px;
+    width: 100%;
+    height: 80px;
     border-radius: 10px;
-    box-shadow: 0px 25px 40px #d1d1d1;
+    box-shadow: 0px 25px 40px #B2ABAB;
     background: #FFFFFF;
     display: flex;
-    justify-content: left;
+    justify-content: left; 
     align-items: center; 
+    gap: 10px;
+    padding: 30px;
 }
 
+.pilih_semua form  {
+   width: 100%;
+   display: flex;
+   align-items: center; 
+   gap: 10px;
+}
+
+.pilih_semua form input {
+    width: 30px;
+    height: 30px;
+}
+
+.pilih_semua form label {
+    font-size: 20px; 
+}
+
+
 .produk {
+    width: 100%;
+    height: 100%;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 25px 40px #d1d1d1;
+     border-radius: 10px;
+    box-shadow: 0px 25px 40px #B2ABAB;
     background: #FFFFFF;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+
 }
 
+.produk form {
+  display: flex;
+  align-items: center; /* Menengahkan vertikal */
+  gap: 10px;
+  margin-top: 30px;
+}
 
+.produk form input {
+    width: 30px;
+    height: 30px;
+}
 
+.produk form label {
+    font-size: 20px;
+}
+
+.produk img {
+    width: 130px;
+    height: 130px;
+}
 .right_content {
     width: 400px;
-    height: 300px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     margin-left: 80px;
     border-radius: 10px;
-    box-shadow: 0px 25px 40px #d1d1d1;
+    box-shadow: 0px 25px 40px #B2ABAB;
     background: #FFFFFF;
+}
+
+h2 {
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+.text_above {
+    padding-left: 40px;
+    margin-top: 5px;
+}
+
+.garis-horizontal-1 {
+    border: none; 
+    border-top: 1px solid #000000; 
+    margin: 10px 0; 
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.text_below {
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.Checkout {
+    margin: 50px 500px 50px 75px;
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    background: #D0DED8;
+    font-size: 20px;
 }
 
 .footer {
@@ -166,7 +244,7 @@ body {
     gap: 1.5rem;
     padding-left: 40px;
     padding-bottom: 200px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .col {
@@ -182,13 +260,28 @@ body {
     text-align: left;
 }
 
-.penutup {
+.garis-horizontal-2 {
+    border: #000000; 
+    border-top: 1px solid #000000;  
+    margin: 10px 0;  
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #D0DED8;
+    background: #D0DED8;
+}
+
+.penutup { 
     width: 100%;
-    height: 30px;
+    height: 25px;
     color: #7B7575;
     background: #D0DED8;
-    margin-top: 2px;
+    background-color: #D0DED8;
     align-items: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    margin-top: 0;
 }
+
+
+
