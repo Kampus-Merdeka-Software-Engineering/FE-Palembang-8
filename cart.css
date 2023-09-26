@@ -132,6 +132,14 @@ body {
 .col {
     text-decoration: dashed;
     color: black;
+    text-align:left;
+    padding-left: 20px;
+}
+
+.col a {
+    font-size:  ;
+    padding-left: 0px;
+    text-align: left;
 }
 
 .
