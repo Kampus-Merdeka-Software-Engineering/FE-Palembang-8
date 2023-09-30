@@ -1,0 +1,268 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    width: 280%;
+    height: 90px;
+    background: #D0DED8;
+    padding: 10px 20px;
+    padding-left: 0;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.categorylist ul {
+    list-style-type: none;
+}
+
+.categorylist ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.categorylist ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.search-container input[type="text"] {
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 30px;
+    border: 1px solid #000000;
+    text-transform: capitalize;
+    background: #FFFFFF;
+    color: #a9a9a9;
+    outline: none;
+}
+
+.search-container button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.cart button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.loginbutton button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.singupbutton button {
+    background-color: #588B76;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* Style the banner */
+.banner_container img {
+    max-width: 1000%;
+    height: auto;
+    width: 280%;
+}
+
+/* Style the category menu */
+.categorymenu {
+    background-color: #d0ded8;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 280%;
+  
+}
+
+.categorymenu p {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.categorymenu .olahraga,
+.categorymenu .obat,
+.categorymenu .buahdansayur,
+.categorymenu .makanansehat,
+.categorymenu .elektronik,
+.categorymenu .suplemen,
+.categorymenu .alatkesehatan {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.categorymenu button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the "Semua Produk" section */
+.allproduct {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%
+  padding: 5px;
+  float: left;
+  
+  
+}
+
+.allproduct ~ div {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.allproduct button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.morebutton button {
+  background: #d0ded8;
+  color: #333
+  width: 200%; 
+}
+
+/* Style the "Carefit" section */
+.abtcarefit {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    width: 280%;
+  
+}
+
+.abtcarefit + p {
+  margin-top: 10px;
+  text-align: justify;
+}
+
+.healthylife {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: justify;
+
+}
+
+.healthylife + p {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #d0ded8;
+    color: #fff;
+    padding: 20px 0;
+    width: 280%;
+}
+
+.footer h4 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer li {
+  margin-bottom: 5px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1.5rem;
+    padding-left: 40px;
+    padding-bottom: 200px;
+    margin-bottom: 10px;
+}
+
+.col {
+    text-decoration: dashed;
+    color: black;
+    text-align:left;
+    padding-left: 20px;
+}
+
+.col a {
+    font-size:  ;
+    padding-left: 0px;
+    text-align: left;
+}
+
+.garis-horizontal-2 {
+    border: #000000; 
+    border-top: 1px solid #000000;  
+    margin: 10px 0;  
+    margin-left: 40px;
+    margin-right: 40px;
+    background-color: #D0DED8;
+    background: #D0DED8;
+}
+
+.penutup { 
+    width: 100%;
+    height: 25px;
+    color: #7B7575;
+    background: #D0DED8;
+    background-color: #D0DED8;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0;
+}
+
+/* Add more styles for social media icons if needed */
