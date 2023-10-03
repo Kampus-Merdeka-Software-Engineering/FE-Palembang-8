@@ -1,268 +1,258 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-/* Set a background color for the body */
-body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-}
+    .header {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 130px;
+        background: #D0DED8;
+        margin-top: 5px;
+        margin-right: 5px;
+    }
+    
+    .logo {
+      display: flex;
+      width: 300px;
+      height: 300px;
+    }
+    
+    .search-container {
+        display: flex;
+        align-items: center;
+        background: #FFFFFF;
+        width: 630px;
+        height: 20px;
+        padding: 10px;
+        border-radius: 40px;
+        border: 1px solid #a9a9a9;
+    }
+      .search {
+        border: none;
+        margin-right: 210px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+        margin-top: 43px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20;
+      }
 
-/* Style the header */
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    right: 0;
-    top: 0;
-    z-index: 100;
-    width: 280%;
-    height: 90px;
-    background: #D0DED8;
-    padding: 10px 20px;
-    padding-left: 0;
-    padding-right: 100px;
-    justify-content: space-between;
-}
+      .searchicon{
+        margin-left: 200px;
+        margin-top: 10px;
+        margin-bottom: 3px;
+      }
 
-.logo img {
-    max-height: 50px;
-}
+      .cart{
+        margin: 50px;
+        width: 34px;
+        height: 34px;
+      }
 
-.categorylist ul {
-    list-style-type: none;
-}
+      .carticon{
+        background-color: transparent;
+        border: none;
+      }
+      
+      .login{
+        float: right;
+        width: 107px;
+        height: 34px;
+        border-radius: 5px;
+        border: 1px solid;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    
+      .signup {
+        float: right;
+        margin: 10px;
+        background-color: #588B76;
+        color: white;
+        width: 107px;
+        height: 34px;
+        border-radius: 5px;
+        border: 1px solid black;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      
+    
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+    
+    .categorymenu{
+      background-color: #D0DED8;
+      padding-bottom: 70px;
+    }
 
-.categorylist ul li {
-    display: inline;
-    margin-right: 20px;
-}
+    .categorytitle{
+      padding-left: 30px;
+      padding-top: 5px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+    }
 
-.categorylist ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
+    .categoryrow{
+      display: flex;
+      margin: 0 20px;
+    }
 
-.search-container input[type="text"] {
-    width: 500px;
-    height: 30px;
-    padding: 10px;
-    border-radius: 30px;
-    border: 1px solid #000000;
-    text-transform: capitalize;
-    background: #FFFFFF;
-    color: #a9a9a9;
-    outline: none;
-}
+    .categorybutton{
+      width: 150px;
+      height: 150px;
+      margin: 5px;
+      border-radius: 5px;
+      border: solid black 0.5px;
+    }
 
-.search-container button {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    margin-left: 5px;
-    cursor: pointer;
-}
+    .categoryimg{
+      width: 100x;
+      height: 100px;
+    }
 
-.cart button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin-top: 10px;
+      padding-left: 18px;
+    }
+    
+    .dots{
+      padding-left: 300px;
+    }
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active {
+      background-color: #717171;
+    }
+    
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {font-size: 11px}
+    }
 
-.loginbutton button {
-    background-color: #fff;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-}
+    .allproduct{
+      text-align: center;
+      font-size: 35px;
+    }
+    .productrow{
+      display: flex;
+      margin: 20px;      
+    }
 
-.singupbutton button {
-    background-color: #588B76;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 15px;
-    margin-left: 10px;
-    cursor: pointer;
-}
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 300px;
+      height: 410px;
+      margin: 15px;
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      border: solid 1px;
+      border-radius: 10px;
+    }
 
-/* Style the banner */
-.banner_container img {
-    max-width: 1000%;
-    height: auto;
-    width: 280%;
-}
+    /* .produk{
+      border: solid 0.5px;
+    } */
 
-/* Style the category menu */
-.categorymenu {
-    background-color: #d0ded8;
-    padding: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 280%;
-  
-}
+    .namaproduk{
+      font-family: 'Poppins', sans-serif;
+      font-size: 25px;
+      margin: 0;
+    }
 
-.categorymenu p {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+    .hargaproduk{
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      font-weight: 500;
+      margin: 0;
+      padding-top: 5px;
+    }
 
-.categorymenu .olahraga,
-.categorymenu .obat,
-.categorymenu .buahdansayur,
-.categorymenu .makanansehat,
-.categorymenu .elektronik,
-.categorymenu .suplemen,
-.categorymenu .alatkesehatan {
-    text-align: center;
-    margin-bottom: 20px;
-}
+    .bottom{
+      align-items: center;
+      display: flex;
+    }
 
-.categorymenu button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
+    .star{
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 10px;
+    }
 
-/* Style the "Semua Produk" section */
-.allproduct {
-    margin-top: 20px;
-    font-size: 24px;
-    font-weight: bold;
-}
+    .rating{
+      font-family: 'Poppins', sans-serif;
+      padding-top: 33px;
+      color: #7B7575;
+    }
 
+    .terjual{
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      color: #7B7575;
+      padding-left: 130px;
+      padding-top: 30px;
+    }
 
-.row {
-  display: flex;
-}
+    .morebutton{
+      background-color: #D0DED8;
+      margin-left: 510px;
+      padding: 15px 70px;
+      border: solid 0.5px;
+      border-radius: 5px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      cursor: pointer;
+    }
 
-.column {
-  flex: 33.33%
-  padding: 5px;
-  float: left;
-  
-  
-}
+    .morebutton:hover{
+      color: white;
+      border: solid black 0.5px;
+      background-color: #588B76;
+    }
 
-.allproduct ~ div {
-    margin: 10px 0;
-    text-align: center;
-}
+    .carefit-exp{
+      margin: 30px;
+      text-align: justify;
+    }
+    .title{
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      color: #7B757575;
+    }
 
-.allproduct button {
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.morebutton button {
-  background: #d0ded8;
-  color: #333
-  width: 200%; 
-}
-
-/* Style the "Carefit" section */
-.abtcarefit {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-    width: 280%;
-  
-}
-
-.abtcarefit + p {
-  margin-top: 10px;
-  text-align: justify;
-}
-
-.healthylife {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-    text-align: justify;
-
-}
-
-.healthylife + p {
-    margin-top: 10px;
-    text-align: justify;
-}
-
-/* Style the footer */
-.footer {
-    background-color: #d0ded8;
-    color: #fff;
-    padding: 20px 0;
-    width: 280%;
-}
-
-.footer h4 {
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.footer ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer li {
-  margin-bottom: 5px;
-}
-
-.row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1.5rem;
-    padding-left: 40px;
-    padding-bottom: 200px;
-    margin-bottom: 10px;
-}
-
-.col {
-    text-decoration: dashed;
-    color: black;
-    text-align:left;
-    padding-left: 20px;
-}
-
-.col a {
-    font-size:  ;
-    padding-left: 0px;
-    text-align: left;
-}
-
-.garis-horizontal-2 {
-    border: #000000; 
-    border-top: 1px solid #000000;  
-    margin: 10px 0;  
-    margin-left: 40px;
-    margin-right: 40px;
-    background-color: #D0DED8;
-    background: #D0DED8;
-}
-
-.penutup { 
-    width: 100%;
-    height: 25px;
-    color: #7B7575;
-    background: #D0DED8;
-    background-color: #D0DED8;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 0;
-}
-
-/* Add more styles for social media icons if needed */
+    .explanation{
+      font-family: 'Poppins', sans-serif;
+      font-size: 13px;
+      color: #B2ABAB;
+    }
+   
