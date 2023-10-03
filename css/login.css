@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 /* Reset some default styles */
 body, h1, h2, h3, h4, h5, h6, p, ul, li {
     margin: 0;
-    font-family: 'Inter', sans-serif;
+    font-family: "Poppins";
 }
 
 /* Set a background color for the whole page */
