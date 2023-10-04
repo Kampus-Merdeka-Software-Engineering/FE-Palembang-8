@@ -83,7 +83,10 @@ body {
 
 /* Style the right content box */
 .boxleft_content img{
-    padding-left: 150px;
+    padding-left: 10px;
+    margin-right: 100px;
+    width: 500px;
+    height: 400px;
 }
 
 .boxright_content {
