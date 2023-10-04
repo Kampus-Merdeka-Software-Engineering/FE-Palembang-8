@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+  .maincontainer{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+    /* header */
     .header {
         display: flex;
         align-items: center;
-        width: 100%;
+        width: 1350px;
         height: 130px;
         background: #D0DED8;
-        margin-top: 5px;
-        margin-right: 5px;
     }
     
     .logo {
@@ -64,6 +68,12 @@
         font-weight: 600;
         cursor: pointer;
       }
+
+      .login:hover{
+        color: white;
+        background-color: #85aa9b;
+        border: solid black 0.5px;
+      }
     
       .signup {
         float: right;
@@ -79,6 +89,11 @@
         font-weight: 600;
         cursor: pointer;
       }
+
+      .signup:hover{
+        color:black;
+        background-color: #85aa9b;
+      }
       
     
     @media screen and (max-width: 500px) {
@@ -88,38 +103,9 @@
         text-align: left;
       }
     }
-    
-    .categorymenu{
-      background-color: #D0DED8;
-      padding-bottom: 70px;
-    }
 
-    .categorytitle{
-      padding-left: 30px;
-      padding-top: 5px;
-      font-family: 'Poppins', sans-serif;
-      font-size: 20px;
-      font-weight: 600;
-    }
 
-    .categoryrow{
-      display: flex;
-      margin: 0 20px;
-    }
-
-    .categorybutton{
-      width: 150px;
-      height: 150px;
-      margin: 5px;
-      border-radius: 5px;
-      border: solid black 0.5px;
-    }
-
-    .categoryimg{
-      width: 100x;
-      height: 100px;
-    }
-
+    /* banner */
     .slideshow-container {
       max-width: 1000px;
       position: relative;
@@ -158,40 +144,91 @@
     @media only screen and (max-width: 300px) {
       .text {font-size: 11px}
     }
+  
+    /* section category */
+    .categorymenu{
+      background-color: #D0DED8;
+      padding-bottom: 30px;
+      margin-top: 10px;
+    }
 
+    .categorytitle{
+      padding: 10px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 30px;
+      font-weight: 600;
+      text-align: center;
+      background-color: #a5b6ae;
+    }
+
+ 
+    .categoryrow{
+      display: flex;
+      margin: 0 20px;
+      margin-top: 10px;
+      padding-left: 15px;
+    }
+
+    .categorybutton{
+      width: 150px;
+      height: 150px;
+      margin: 15px;
+      border-radius: 5px;
+      border: solid black 0.5px;
+      cursor: pointer;
+    }
+    .categorybutton:hover{
+      background-color: #85aa9b;
+    }
+
+    .categoryimg{
+      width: 100x;
+      height: 100px;
+    }
+
+    .categoryname{
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    
+    /* produk */
     .allproduct{
       text-align: center;
       font-size: 35px;
+      font-family: 'Poppins', sans-serif;
     }
+    
     .productrow{
       display: flex;
-      margin: 20px;      
+      margin: 20px 30px;      
     }
 
     .card {
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      width: 300px;
-      height: 410px;
-      margin: 15px;
+      width: 280px;
+      height: 300px;
+      margin: 5px;
       text-align: center;
       font-family: 'Poppins', sans-serif;
-      border: solid 1px;
+      border: solid black 0.2px;
       border-radius: 10px;
     }
 
-    /* .produk{
-      border: solid 0.5px;
-    } */
-
     .namaproduk{
       font-family: 'Poppins', sans-serif;
-      font-size: 25px;
+      font-size: 15px;
+      font-weight: 600;
       margin: 0;
+      margin-top: 10px;
+      padding-top: 10px;
     }
 
     .hargaproduk{
       font-family: 'Poppins', sans-serif;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 500;
       margin: 0;
       padding-top: 5px;
@@ -203,27 +240,29 @@
     }
 
     .star{
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 15px;
     padding-right: 10px;
     }
 
     .rating{
       font-family: 'Poppins', sans-serif;
-      padding-top: 33px;
+      padding-top: 23px;
       color: #7B7575;
     }
 
     .terjual{
       font-family: 'Poppins', sans-serif;
-      font-size: 15px;
+      font-size: 16px;
       color: #7B7575;
-      padding-left: 130px;
-      padding-top: 30px;
+      padding-left: 48px;
+      padding-top: 25px;
     }
 
     .morebutton{
       background-color: #D0DED8;
+      margin-top: 10px;
+      margin-bottom: 15px;
       margin-left: 510px;
       padding: 15px 70px;
       border: solid 0.5px;
