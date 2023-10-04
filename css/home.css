@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-  .maincontainer{
+.maincontainer{
     margin: 0;
     padding: 0;
     overflow: hidden;
-  }
+}
     /* header */
-    .header {
-        display: flex;
-        align-items: center;
-        width: 1350px;
-        height: 130px;
-        background: #D0DED8;
-    }
+header {
+  display: flex;
+  align-items: center;
+  width: 1350px;
+  height: 130px;
+  background: #D0DED8;
+}
     
     .logo {
       display: flex;
