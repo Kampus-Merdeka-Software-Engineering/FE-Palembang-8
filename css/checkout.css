@@ -16,7 +16,7 @@ body {
     overflow: hidden;
 }
 
-.header_content {
+.header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,74 +28,27 @@ body {
     background: #D0DED8;
     padding: 10px 20px;
     padding-left: 0;
-    padding-right: 100px;
+    padding-right: 0;
     justify-content: space-between;
 }
 
 .logocarefit {
     display: flex;
+    padding-left: 0px;
 }
 
 .logocarefit img {
-   max-width: 300px;
+   max-width: 200px;
    height: auto;
-   padding-left: 0px;
+   padding-left: 50px;
    margin-left: 0px;
 }
 
-.search {
-    width: 500px;
-    display: flex;
-    flex-direction: row;
-    margin-top: auto;
-    margin-left: 400px;
-    margin-bottom:auto
+.checkout {
+    padding-right: 65px;
+    font-size: 24px;
+    color: #000;
 }
-
-.search_box {
-    width: 300px;
-    height: 30px;
-    padding: 10px;
-    border-radius: 30px;
-    border: 1px solid #000000;
-    text-transform: capitalize;
-    background: #FFFFFF;
-    color: #a9a9a9;
-    outline: none;
-}
-
-.search_btn {
-    width: 200px;
-    height: auto;
-    padding: 10px 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background: none;
-    font-size: 15px;
-    color: #a9a9a9;
-}
-
-.search-box:placeholder{
-    color: #a9a9a9;
-}
-
-.profile {
-    margin-right: 50px;
-}
-
-.profile img{
-    max-width : 50px;
-}
-
-
-
-
-
-
-
-
-
 
 
 
