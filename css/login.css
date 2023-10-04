@@ -45,6 +45,13 @@ body {
   padding-left: 40px;
 }
 
+.image_header img {
+    max-width: 300px;
+    height: auto;
+    padding-left: 0px;
+    margin-left: 0px;
+ }
+ 
 /* Style the logo */
 .logo {
    max-width: 200px;
