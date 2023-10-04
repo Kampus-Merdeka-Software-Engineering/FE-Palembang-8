@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareFit-Home</title>
-    <link rel="stylesheet" type="text/css" href="../css/home.css">
-    <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 </head>
 <body>
-    <div class="main container">
+    <div class="maincontainer">
         <!--header-->
         <header class="header">
             <div class="logo">
@@ -73,32 +74,42 @@
             </script>
         <!-- category -->
         <section class="categorymenu">
-        <div class="categorytitle"><p>Kategori</p></div>
+        <div class="categorytitle">Kategori</div>
             <section class="categoryrow">
             <div class="category">
                 <button type="button" class="categorybutton"><img src="images/category/olahraga.png" class="categoryimg"></button>
+                <div class="categoryname">Olahraga</div>
             </div>
             <div class="category">
                 <button type="button" class="categorybutton"><img src="images/category/obat.png" class="categoryimg"></button>
+                <div class="categoryname">Obat</div>
             </div>
             <div class="category">
                 <button type="button" class="categorybutton"><img src="images/category/buahdansayur.png" class="categoryimg"></button>
+                <div class="categoryname">Buah dan Sayur</div>
             </div>
             <div class="category">
                 <button type="button" class="categorybutton"><img src="images/category/makanansehat.png" class="categoryimg"></button>
+                <div class="categoryname">Makanan Sehat</div>
             </div>
             <div class="category">
                 <button type="button" class="categorybutton"><img src="images/category/elektronik.png" class="categoryimg"></button>
+                <div class="categoryname">Elektronik</div>
             </div>
             <div class="category">
                 <button type="button" class="categorybutton"><img src="images/category/suplemen.png" class="categoryimg"></button>
+                <div class="categoryname">Suplemen</div>
+            </div>
+            <div class="category">
+                <button type="button" class="categorybutton"><img src="images/category/alatkesehatan.png" class="categoryimg"></button>
+                <div class="categoryname">Alat Kesehatan</div>
             </div>
             </section>
         </section>
     <!--all product-->
         <section>
         <h1 class="allproduct">Semua Produk</h1>
-        </section> 
+        </section class="products"> 
         <section class="productrow">       
             <div class="card">
                 <img class="produk" src="images/produk/smartwatch.png">
@@ -139,12 +150,36 @@
             <div class="card">
                 <img class="produk" src="images/produk/avocado.png">
             <div class="content">
-                <h3 class="namaproduk">avocado</h3>
+                <h3 class="namaproduk">Avocado</h3>
                 <h5 class="hargaproduk">Rp 30.000</h5>
                 <div class="bottom">
                     <img class="star" src="images/star.png">
                     <p class="rating">4.8</p>
                     <p class="terjual">20 terjual</p>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <img class="produk" src="images/produk/skippingrope.png">
+            <div class="content">
+                <h3 class="namaproduk">Skipping Rope</h3>
+                <h5 class="hargaproduk">Rp 70.000</h5>
+                <div class="bottom">
+                    <img class="star" src="images/star.png">
+                    <p class="rating">3.0</p>
+                    <p class="terjual">35 terjual</p>
+                </div>
+            </div>
+            </div>
+            <div class="card">
+                <img class="produk" src="images/produk/lettuce.png">
+            <div class="content">
+                <h3 class="namaproduk">Selada Segar</h3>
+                <h5 class="hargaproduk">Rp 30.000</h5>
+                <div class="bottom">
+                    <img class="star" src="images/star.png">
+                    <p class="rating">4.7</p>
+                    <p class="terjual">60 terjual</p>
                 </div>
             </div>
             </div>
@@ -198,32 +233,6 @@
                 </div>
             </div>
             </div>
-        </section> 
-        <section class="productrow">       
-            <div class="card">
-                <img class="produk" src="images/produk/skippingrope.png">
-            <div class="content">
-                <h3 class="namaproduk">Skipping Rope</h3>
-                <h5 class="hargaproduk">Rp 70.000</h5>
-                <div class="bottom">
-                    <img class="star" src="images/star.png">
-                    <p class="rating">3.0</p>
-                    <p class="terjual">35 terjual</p>
-                </div>
-            </div>
-            </div>
-            <div class="card">
-                <img class="produk" src="images/produk/lettuce.png">
-            <div class="content">
-                <h3 class="namaproduk">Selada Segar</h3>
-                <h5 class="hargaproduk">Rp 30.000</h5>
-                <div class="bottom">
-                    <img class="star" src="images/star.png">
-                    <p class="rating">4.7</p>
-                    <p class="terjual">60 terjual</p>
-                </div>
-            </div>
-            </div>
             <div class="card">
                 <img class="produk" src="images/produk/bread.png">
             <div class="content">
@@ -248,7 +257,7 @@
                 </div>
             </div>
             </div>
-        </section>   
+        </section> 
             <div>
                 <div>
                     <button type="button" class="morebutton">Lihat Selengkapnya</button>
@@ -281,7 +290,7 @@
                 jangka panjang. CareFit adalah teman yang setia dalam perjalanan menuju hidup sehat, 
                 memberikan kenyamanan dan pengetahuan yang diperlukan untuk mengubah gaya hidup menjadi lebih baik</p>
         </article>
-    </section>
+    </section> 
     <!--footer-->
         <footer class="footer">
             <div class="container">
