@@ -9,20 +9,18 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 /* Set a background color for the whole page */
 body {
     background-color: #fff;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins";
 }
 
 /* Style the main container */
 .main_container {
-    width: 400px;
-    height: 380px;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: 80px;
-    border-radius: 10px;
-    box-shadow: 0px 25px 40px #B2ABAB;
     background: #fff;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
 /* Style the header container */
@@ -32,8 +30,8 @@ body {
     align-items: center;
     right: 0;
     top: 0;
-    z-index: 100;
-    width: 280%;
+    z-index: 1000;
+    width: 100%;
     height: 90px;
     background: #D0DED8;
     padding: 10px 20px;
@@ -43,18 +41,15 @@ body {
 }
 
 .image_header {
-  width: 450px;
-  height: 100%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  display: flex;
+  padding-left: 40px;
 }
-
 
 /* Style the logo */
 .logo {
-   max-width: 300px;
+   max-width: 200px;
    height: auto;
-   padding-left: 0px;
+   padding-right: 50px;
    margin-left: 0px;
 }
 
@@ -65,48 +60,90 @@ body {
 
 /* Style the content container */
 .content_container {
-    margin-top: 20px;
-    display: grid;
-    justify-content: space-between;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 /* Style the left content box */
-.boxleft_content img {
-    max-width: 100%;
-    height: auto;
+.boxleft_content {
+    width: 600px;
+    height: 100%;
 }
 
 /* Style the right content box */
-.boxright_content {
-    flex-grow: 1;
-    padding-left: 20px;
+.boxleft_content img{
+    padding-left: 150px;
 }
 
-h2 {
+.boxright_content {
+    width: 410px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    border-radius: 1px;
+    box-shadow: 0px 25px 40px #B2ABAB;
+    background: #FFFFFF;
+}
+
+.boxright_content h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
     font-size: 24px;
     color: #333;
 }
 
-input[type="text"], input[type="password"] {
-    width: 90%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
+input[type="text"] {
+    width: 300px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 25px;
+    border: 1px solid #000;
     border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 30px;
 }
 
-button.button_login {
+.button_login {
     background-color: #B2ABAB;
     color: #fff;
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
+    width: 357px;
+    height: 40px;
+    margin-top: 15px;
+    margin-left: 25px;
+    margin-right: 40px;
+    border: 1px solid #B2ABAB;
     border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 40px;
+}
+
+.horizontal_text {
+   display: flex;
+   align-items: center;
+   text-align: center;
+   margin-top: 120px;
+   margin-left: 135px;
+}
+
+.boxright_content h4 {
+    margin-right: 10px;
+    color: #333;
+    font-size: 12px;
 }
 
 /* Style the footer */
 .footer {
+    width: 100%;
+    height: 100px;
+    background: #FFFFFF;
     text-align: center;
     margin-top: 20px;
     color: #333;
