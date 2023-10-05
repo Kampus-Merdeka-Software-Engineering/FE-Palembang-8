@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +8,69 @@
     <link rel="stylesheet" href="../css/checkout.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <div class="main container">
         <!--header-->
-           <header class="header_container">
-               <figure class="logocarefit">
-                    <img src="images/logo carefit.png">
-                </figure>
-                <div>
-                    <h2 class="checkout">Checkout</h1>
-                </div>
-           </header> 
-        <!--main--> 
-            <!--alamat-->
+        <header class="header_container">
+            <figure class="logocarefit">
+                <img src="../images/logo carefit.png">
+            </figure>
+            <div>
+                <h2 class="checkout">Checkout</h1>
+            </div>
+        </header>
+        <!--main-->
+        <!--alamat-->
+        <div class=full_section>
             <section>
-                   <div class="alamat">
-                       <figure class="logo">
-                            <img src="images/icon_location.png">
-                        </figure>
-                       <h2><b>Alamat Pengiriman</b></h2>
-                       <h3>Fairuz Jawharah</h3>
-                       <h4>085755145559</h4>
-                       <p>Jl. Sedayu V, Kec. Krembangan, Kota SBY, Jawa Timur, 60178.</p>
-                   </div>
+                <div class="alamat">
+                    <figure class="logo">
+                        <img src="../images/icon_location.png">
+                    </figure>
+                    <h2 class="text"><b>Alamat Pengiriman</b></h2>
+                    <h3 class="text">Fairuz Jawharah</h3>
+                    <h4 class="text">085755145559</h4>
+                    <p class="text">Jl. Sedayu V, Kec. Krembangan, Kota SBY, Jawa Timur, 60178.</p>
+                </div>
             </section>
+            <hr class="garis-horizontal-1">
             <!--barang-->
             <article>
                 <div class="mainproduk">
-                <div class="headerproduk">
-                    <h2 class="headerpesanan"><b>Produk Pesanan</b></h2>
-                    <div class="jumlah">Jumlah</div>
-                    <div class="jumlah">Harga Satuan</div>
+                    <div class="headerproduk">
+                        <h2 class="headerpesanan"><b>Produk Pesanan</b></h2>
+                        <div class="jumlah">Jumlah</div>
+                        <div class="jumlah">Harga Satuan</div>
                     </div>
-                <div class="produk">
-                    <figure class="logo">
-                        <img src="images/smartwatch.png">
-                    </figure>
-                    <div class="details">
-                        <h3 class="namaproduk">Smartwatch</h3>
-                        <div class="jumlahproduk1">1</div>
-                        <div class="hargaproduk1">Rp 880.000</div>
-                    </div>
+                    <div class="produk">
+                        <figure class="logo">
+                            <img src="../images/produk/smartwatch.png">
+                        </figure>
+                        <div class="details">
+                            <h3 class="namaproduk">Smartwatch</h3>
+                            <div class="jumlahproduk1">1</div>
+                            <div class="hargaproduk1">Rp 880.000</div>
+                        </div>
                     </div>
                 </div>
             </article>
+            <hr class="garis-horizontal-1">
             <!--pengiriman-->
             <section class="pengiriman">
                 <h3>Pilih Opsi Pengiriman</h3>
-                 <div class="dropdown">
-                      <button class="dropbtn" onclick="myFunction()">Dropdown
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="myFunction()">Dropdown
                         <i class="fa fa-caret-down"></i>
-                      </button>
+                    </button>
                     <div class="dropdown-content1">
-                        <figure class="logo"><img src="images/jne.png"></figure>
-                        <figure class="logo"><img src="images/jnt.png"></figure>
+                        <figure class="logo"><img src="../images/Pengiriman/jne.png"></figure>
+                        <figure class="logo"><img src="../images/Pengiriman/jnt.png"></figure>
+                    </div>
                 </div>
-              </div>
+
             </section>
+            <hr class="garis-horizontal-1">
             <!--pembayaran-->
             <aside class="pembayaran">
                 <h3>Pilih Opsi Pengiriman</h3>
@@ -75,18 +82,26 @@
                       <input type="radio" id="bri" name="bank" value="BSI">
                       <label for="BSI">BSI</label>
             </aside>
+            <hr class="garis-horizontal-1">
             <!--total-->
-            <section>
-                Subtotal
+            <section class="totalharga">
+                <h4>Order Summary (1 Items)</h4>
+                <div class="jumlahproduk1">Subtotal</div>
+                <div class="hargaproduk1">Disscount</div>
+                <h4> Total (1 Items) </h4>
             </section>
-        <!--footer-->
-            <footer class="footer">
-                <div class="container">
-                    <section>
-                        Subtotal
-                    </section>
+            <section class="penutup_pembayaran">
+                <div class="first">
+                    <h3>Total Pembayaran</h2>
+                    <h3>Rp.299.000</h2>
                 </div>
-            </footer>
+                <div class="second">
+                    <h3 class="txt">Checkout</h2>
+                </div>
+
+            </section>
+        </div>
     </div>
 </body>
+
 </html>
