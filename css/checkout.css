@@ -3,15 +3,15 @@
 body {
     margin: 0;
     font-family: "Poppins";
-    background-color : #E9E9E9;
+    background-color: #E9E9E9;
 }
 
 .main_container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 100%;
-    display: flex;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -38,40 +38,105 @@ body {
 }
 
 .logocarefit img {
-   max-width: 200px;
-   height: auto;
-   padding-left: 50px;
-   margin-left: 0px;
+    width: 300px;
+    height: auto;
+    padding-left: 0px;
+    margin-left: 0px;
 }
 
 .checkout {
-    padding-right: 65px;
-    font-size: 24px;
-    color: #000;
+    margin-right: 50px;
 }
 
-
-.footer {
-    background: #D0DED8;
-}
-
-
-.footer_container {
+.full_section {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
 
-.row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-    gap: 1.5rem;
-    padding-left: 40px;
-    padding-bottom: 200px;
-    margin-bottom: 30px;
+
+.garis-horizontal-1 {
+    border: none; 
+    border-top: 2px solid #588b76; 
+    margin: 10px 0; 
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
-.col {
-    text-decoration: dashed;
-    color: black;
+.alamat {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 10px;
 }
 
+.text {
+    margin-top: 10px;
+}
+
+.mainproduk {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+
+.pengiriman {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+
+.pembayaran {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+
+.totalharga {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.penutup_pembayaran {
+    display: flex;
+    flex-direction: row;
+    margin-left: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.first {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.second {
+    width: 250px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 0px;
+    background: #D0DED8;
+}
+
+.txt {
+    display: flex;
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center;
+    align-items: center;
+}
