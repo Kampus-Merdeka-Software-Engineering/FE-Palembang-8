@@ -29,7 +29,6 @@ body {
     padding: 10px 20px;
     padding-left: 0;
     padding-right: 0;
-    justify-content: space-between;
 }
 
 .logocarefit {
@@ -55,6 +54,12 @@ body {
     height: 100%;
 }
 
+.begin {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
 
 .garis-horizontal-1 {
     border: none; 
@@ -81,7 +86,6 @@ body {
     margin-left: 50px;
     margin-top: 10px;
 }
-
 
 
 .pengiriman {
@@ -119,7 +123,7 @@ body {
 
 .first {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     justify-content: space-between;
     align-items: center;
 }
@@ -128,15 +132,16 @@ body {
     width: 250px;
     height: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     margin-right: 0px;
     background: #D0DED8;
 }
 
+.txt1 {
+    margin-left: 750px;
+}
+
 .txt {
-    display: flex;
-    justify-content: center; /* Menengahkan secara horizontal */
-    align-items: center;
-    align-items: center;
+    margin-left: 70px;
 }
