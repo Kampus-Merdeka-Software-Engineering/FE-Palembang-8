@@ -1,161 +1,146 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
-/* Reset some default styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, li {
-    margin: 0;
-    font-family: "Poppins";
-}
-
-/* Set a background color for the whole page */
 body {
-    background-color: #fff;
-    font-family: "Poppins";
+  font-family: Poppins;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom left, #d0ded8, #18392b);
+  overflow: hidden;
 }
 
-/* Style the main container */
-.main_container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    overflow: hidden;
-    min-height: 100vh;
-}
-
-/* Style the header container */
-.header_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    height: 90px;
-    background: #D0DED8;
-    padding: 10px 20px;
-    padding-left: 0;
-    padding-right: 100px;
-    justify-content: space-between;
-}
-
-.image_header {
+.wrapper {
   display: flex;
-  padding-left: 40px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.image_header img {
-    max-width: 300px;
-    height: auto;
-    padding-left: 0px;
-    margin-left: 0px;
+.form-wrapper {
+  background-color: #ffffff;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  padding: 50px;
+  width: 300px;
+  height: 350px;
 }
 
-/* Style the logo */
-.logo {
-   max-width: 200px;
-   height: auto;
-   padding-right: 50px;
-   margin-left: 0px;
+.form-wrapper h2 {
+  font-family: Poppins;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
-.login_header {
-    font-size: 24px;
-    color: #000;
+.input-style {
+  position: relative;
+  margin-bottom: 15px;
 }
 
-/* Style the content container */
-.content_container {
-    display: flex;
-    flex: 1;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    margin-top: 100px;
+.input-style input {
+  width: calc(100% - 40px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  padding-right: 40px; 
 }
 
-/* Style the left content box */
-.boxleft_content {
-    width: 600px;
-    height: 100%;
+.input-style .bx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  font-size: 22px;
+  color: #ccc;
 }
 
-/* Style the right content box */
-.boxleft_content img{
-    padding-left: 0;
-    margin-right: 200px;
-    width: 600px;
-    height: 500px;
+.input-style label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  font-size: 13px;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
-.boxright_content {
-    width: 410px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 10px;
-    margin-bottom: 70px;
-    margin-left: 50px;
-    border-radius: 1px;
-    box-shadow: 0px 25px 40px #B2ABAB;
-    background: #FFFFFF;
+.input-style input:focus + label,
+.input-style input:valid + label {
+  font-size: 0px;
+  top: 0;
 }
 
-.boxright_content h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 100px;
-    font-size: 24px;
-    color: #333;
+
+.wrapper {
+  text-align: center; 
+  padding-top: 10px; 
 }
 
-input[type="text"] {
-    width: 300px;
-    height: 35px;
-    margin-top: 15px;
-    margin-left: 25px;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding-left: 25px;
-    padding-right: 30px;
+.btn {
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+  background-color: #d0ded8;
+  color: #18392b;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Poppins;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Efek transisi untuk perubahan warna */
+  transition: color 0.3s;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
-.button_login {
-    background-color: #B2ABAB;
-    color: #fff;
-    width: 357px;
-    height: 40px;
-    margin-top: 15px;
-    margin-left: 25px;
-    margin-right: 40px;
-    border: 1px solid #B2ABAB;
-    border-radius: 5px;
-    padding-left: 25px;
-    padding-right: 40px;
+.btn:hover {
+  background-color: #18392b;
+  color: #d0ded8;
 }
 
-.horizontal_text {
-   display: flex;
-   align-items: center;
-   text-align: center;
-   margin-top: 120px;
-   margin-left: 135px;
+.sign-link {
+  text-align: center; /* Mengatur perataan teks ke tengah */
 }
 
-.boxright_content h4 {
-    margin-right: 10px;
-    color: #333;
-    font-size: 12px;
+.sign-link a {
+  color: #1863bc;
+  text-decoration: none;
 }
 
-/* Style the footer */
-.footer {
-    width: 100%;
-    height: 60px;
-    background: #FFFFFF;
-    text-align: center;
-    margin-top: 20px;
-    color: #333;
-    font-size: 14px;
+.sign-link a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: rgba(
+    240,
+    240,
+    240,
+    0.7
+  ); 
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+  position: relative;
+}
+
+footer p::before {
+  content: "";
+  margin: 0;
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  width: 500vw;
+  height: 1px;
+  background-color: #555;
+  transform: translateX(-50%);
 }
