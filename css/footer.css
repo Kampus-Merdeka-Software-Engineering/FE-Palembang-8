@@ -18,11 +18,31 @@
     padding: 0;
   }
   
-  .footer{
-    background-color: #D0DED8;
-      padding-top: 30px;
-      padding-bottom: 70px;
+  .footer {
+    background-color: #d0ded8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
+  
+  footer p {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  footer p::before {
+    content: "";
+    margin: -10px;
+    position: absolute;
+    width: 500vw;
+    height: 1px;
+    background-color: #555;
+    transform: translateX(-50%);
+  }  
+
   .col{
      width: 50%;
 
