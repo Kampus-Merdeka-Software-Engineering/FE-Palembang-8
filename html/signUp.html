@@ -1,68 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>register</title>
-</head>
-    <!--Feather Icons-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Register</title>
+
+    <!-- Feather Icons -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
 
-    <!--my style-->
-    <link rel="stylesheet" href="../css/signUp.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/login.css" /> <!-- Gunakan CSS yang sama -->
 
-<body>
-  <!--sign up form-->
-  <div class="wrapper">
-    <div class="form-wrapper sign-up">
-      <form method="POST" action="/users">
-        
-        <h2>Sign Up</h2>
+    <!-- Login form -->
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form-wrapper sign-in">
+        <form
+          method="POST"
+          action="http://localhost:5000/users" 
+          id="myForm"
+        >
+          <h2>Sign Up</h2> <!-- Ubah judul -->
 
-        <!-- <div class="input-style">
-          <input
-          type="text" required
-          id="username" />
-          <label for="">Enter your username</label>
-          <i class="bx bxs-user"></i>
-        </div> -->
-        
-        <div class="input-style">
-          <input
-          type="email" required
-          id="email"/>
-          <label for="">Enter your email</label>
-          <i class="bx bxs-envelope"></i>
-        </div>
-        
-        <div class="input-style">
-          <input
-          type="password" required
-          id="password"/>
-          <label for="">Enter your password</label>
-          <i class="bx bxs-lock-alt"></i>
-        </div>        
+          <!-- Ganti input untuk nama, nomor telepon, email, dan kata sandi -->
+          <div class="input-style">
+            <input
+              type="text"
+              required
+              name="name"
+              id="name"
+            />
+            <label for="name">Enter your name</label>
+            <i class="bx bxs-user"></i>
+          </div>
 
-        <button type="submit" class="btn">Sign Up</button>
+          <div class="input-style">
+            <input
+              type="text"
+              required
+              name="phone"
+              id="phone"
+            />
+            <label for="phone">Enter your phone number</label>
+            <i class="bx bxs-phone"></i>
+          </div>
 
-        <div class="sign-link">
-          <p>
-            Already have an account?
-            <a href="login.html">Login</a>
-          </p>
-          </p>
-        </div>
-      </form>
+          <div class="input-style">
+            <input
+              type="email"
+              required
+              name="email"
+              id="email"
+            />
+            <label for="email">Enter your email</label>
+            <i class="bx bxs-envelope"></i>
+          </div>
+
+          <div class="input-style">
+            <input
+              type="password"
+              required
+              name="password"
+              id="password"
+            />
+            <label for="password">Enter your password</label>
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+
+          <button type="submit" class="btn">Sign Up</button>
+
+          <div class="sign-link">
+            <p>
+              Already have an account?
+              <a href="login.html">Login</a>
+            </p>
+            <!-- Tambahkan elemen untuk menampilkan pesan kesalahan -->
+            <p id="error-message" style="color: red;"></p>
+          </div>
+        </form>
+      </div>
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2023 Care Fit 2023. All rights reserved.</p>
+      </footer>
+      <!-- JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function () {
+          $('#myForm').submit(function (event) {
+            event.preventDefault(); // Menghentikan form submission
+  
+            $.ajax({
+              type: 'POST',
+              url: $(this).attr('action'),
+              data: $(this).serialize(),
+              success: function (result) {
+                console.log(result);
+                if (result.message === "Berhasil Membuat Akun") {
+                  // Redirect ke halaman login jika berhasil sign up
+                  window.location.href = "login.html"; // Ganti dengan path yang sesuai
+                } else {
+                  // Tampilkan pesan kesalahan jika sign up gagal
+                  $('#error-message').text("Gagal Sign Up: " + result.error);
+                }
+                // Reset formulir setelah permintaan selesai
+                document.getElementById("myForm").reset();
+              },
+              error: function (res) {
+                $("html,body").animate({
+                  scrollTop: 0
+                }, 80);
+                // Tampilkan pesan kesalahan jika terjadi kesalahan permintaan
+                $('#error-message').text("Terjadi kesalahan. Silakan coba lagi nanti.");
+              }
+            });
+            return false;
+          });
+        });
+      </script>
     </div>
-  </div>
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2023 Care Fit 2023. All rights reserved.</p>
-    </footer>
-  <!--My Javascript-->
-  <script src="/js/register.js"></script>
-</body>
+  </body>
 </html>
