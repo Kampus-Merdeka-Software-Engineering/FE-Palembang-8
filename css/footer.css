@@ -26,14 +26,14 @@
     text-align: center;
   }
   
-/*   footer p {
+  footer p {
     font-size: 14px;
     color: #555;
     text-align: center;
     padding-top: 50px;
-  } */
+  }
   
-  footer p::before {
+/*   footer p::before {
     content: "";
     margin: -10px;
     position: absolute;
@@ -41,7 +41,7 @@
     height: 1px;
     background-color: #555;
     transform: translateX(-50%);
-  }  
+  }   */
 
   .col{
      width: 50%;
