@@ -1,59 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- Feather Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/login.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form id="loginForm" enctype="application/x-www-form-urlencoded">
+        <h2>Log In</h2>
 
-    <!--Feather Icons-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+        <div class="input-style">
+          <input
+            type="email"
+            required
+            name="email"
+            id="email"
+          />
+          <label for="email">Enter your email</label>
+          <i class="bx bxs-envelope"></i>
+        </div>
 
-    <!--css-->
-    <link rel="stylesheet" href="/css/login.css" />
+        <div class="input-style">
+          <input
+            type="password"
+            required
+            name="password"
+            id="password"
+          />
+          <label for="password">Enter your password</label>
+          <i class="bx bxs-lock-alt"></i>
+        </div>
 
-    <!--Login form-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <div class="form-wrapper sign-in">
-        <form method="POST" action="users/login">
-          <h2>Log In</h2>
+        <button type="button" class="btn" id="loginButton">Log In</button>
 
-          <div class="input-style">
-            <input
-            type="email" required name="email"
-            id="email" />
-            <label for="">Enter your email</label>
-            <i class="bx bxs-envelope"></i>
-          </div>
-
-          <div class="input-style">
-            <input
-            type="password" required name="password"
-            id="password"/>
-            <label for="">Enter your password</label>
-            <i class="bx bxs-lock-alt"></i>
-          </div>
-
-          <button type="submit" class="btn">Log In</button>
-
-          <div class="sign-link">
-            <p>
-              Don't have an account?
-              <a href="register.html">Sign Up</a>
-            </p>
-            </p>
-          </div>
-        </form>
-      </div>
-          <!-- Footer -->
+        <div class="sign-link">
+          <p>
+            Don't have an account?
+            <a href="signUp.html">Sign Up</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <!-- Footer -->
     <footer>
       <p>&copy; 2023 Care Fit 2023. All rights reserved.</p>
     </footer>
-      <!--Javascript-->
-    <script src="/js/login.js"></script>
+    <!-- JavaScript -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const loginButton = document.getElementById("loginButton");
+
+        loginButton.addEventListener("click", function () {
+          // Ambil nilai email dan password dari formulir
+          const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+
+          // Buat objek FormData untuk data yang akan dikirim
+          const formData = new URLSearchParams();
+          formData.append("email", email);
+          formData.append("password", password);
+
+          // Kirim permintaan POST dengan fetch
+          fetch("/users/login", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: formData.toString(), // Ubah FormData menjadi string
+          })
+            .then((response) => {
+              if (response.status === 200) {
+                // Redirect ke halaman home jika berhasil login
+                window.location.href = "home2.html"; // Ganti dengan path yang sesuai
+              } else if (response.status === 401) {
+                // Tampilkan pesan jika password salah
+                alert("Gagal Login: Password salah. Silakan coba lagi.");
+              } else if (response.status === 404) {
+                // Tampilkan pesan jika user tidak ditemukan
+                alert("Gagal Login: User tidak ditemukan.");
+              } else if (response.status === 500) {
+                // Tampilkan pesan jika terjadi kesalahan server
+                alert("Gagal Login: Terjadi kesalahan server. Silakan coba lagi nanti.");
+              }
+            })
+            .catch((error) => {
+              // Tangani kesalahan jaringan atau permintaan
+              console.error("Error:", error);
+              alert("Terjadi kesalahan. Silakan coba lagi nanti.");
+            });
+        });
+      });
+    </script>
+  </div>
 </body>
 </html>
