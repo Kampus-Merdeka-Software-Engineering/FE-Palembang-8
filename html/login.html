@@ -78,6 +78,9 @@
               type: 'POST',
               url: $(this).attr('action'),
               data: $(this).serialize(),
+              401: function(result) {
+              $('#error-message').text("Gagal Login: Email atau password salah. Silakan coba lagi.");
+              },
               success: function (result) {
                 console.log(result);
                 if (result.message === "Berhasil Login") {
