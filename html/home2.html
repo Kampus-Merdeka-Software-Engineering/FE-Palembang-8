@@ -184,7 +184,7 @@
                     <p class="rating">3.0</p>
                     <p class="terjual">35 terjual</p>
                 </div>
-            <div><button class="addcart">Add to Cart</button></div>
+            <div><button class="addcart" onclick="addToCart('Skipping Rope', 'Rp 70.000')">Add to Cart</button></div>
             </div>
             </div>
             <div class="card">
@@ -197,7 +197,7 @@
                     <p class="rating">4.7</p>
                     <p class="terjual">60 terjual</p>
                 </div>
-            <div><button class="addcart">Add to Cart</button></div>
+            <div><button class="addcart" onclick="addToCart('Selada Segar', 'Rp 30.000')">Add to Cart</button></div>
             </div>
             </div>
         </section> 
@@ -212,7 +212,7 @@
                     <p class="rating">5.0</p>
                     <p class="terjual">70 terjual</p>
                 </div>
-            <div><button class="addcart">Add to Cart</button></div>
+            <div><button class="addcart" onclick="addToCart('Blackmores', 'Rp 190.000')">Add to Cart</button></div>
             </div>
             </div>
             <div class="card">
@@ -225,7 +225,7 @@
                     <p class="rating">4.9</p>
                     <p class="terjual">50 terjual</p>
                 </div>
-            <div><button class="addcart">Add to Cart</button></div>
+            <div><button class="addcart" onclick="addToCart('Alat Timbang Digital', 'Rp 100.000')">Add to Cart</button></div>
             </div>
             </div>
             <div class="card">
@@ -238,7 +238,7 @@
                     <p class="rating">4.9</p>
                     <p class="terjual">40 terjual</p>
                 </div>
-            <div><button class="addcart">Add to Cart</button></div>
+            <div><button class="addcart" onclick="addToCart('Alat Tensi Digital', 'Rp 400.000')">Add to Cart</button></div>
             </div>
             </div>
             <div class="card">
@@ -251,7 +251,7 @@
                     <p class="rating">4.9</p>
                     <p class="terjual">10 terjual</p>
                 </div>
-            <div><button class="addcart">Add to Cart</button></div>                
+            <div><button class="addcart" onclick="addToCart('Promag Tablet', 'Rp 15.000')">Add to Cart</button></div>                
             </div>
             </div>
             <div class="card">
@@ -264,7 +264,7 @@
                     <p class="rating">4.0</p>
                     <p class="terjual">55 terjual</p>
                 </div>
-            <div><button class="addcart">Add to Cart</button></div>
+            <div><button class="addcart" onclick="addToCart('Roti Gandum', 'Rp 45.000')">Add to Cart</button></div>
             </div>
             </div>
             <div class="card">
@@ -277,7 +277,7 @@
                     <p class="rating">4.8</p>
                     <p class="terjual">5 terjual</p>
                 </div>
-            <div><button class="addcart">Add to Cart</button></div>                
+            <div><button class="addcart" onclick="addToCart('Susu Protein', 'Rp 236.000')">Add to Cart</button></div>                
             </div>
             </div>
         </section> 
@@ -374,5 +374,40 @@
             </div>
         </footer>
 </div>
+<script>
+    // Fungsi untuk menambahkan produk ke keranjang
+ // Fungsi untuk menambahkan produk ke keranjang
+
+const userId = sessionStorage.getItem('userId');
+
+function addToCart(namaProduk, hargaProduk) {
+    // Gantilah ini dengan cara Anda mengambil ID pengguna dari session storage
+    // Membuat objek URLSearchParams untuk menyusun data sebagai form-encode
+    const formData = new URLSearchParams();
+    formData.append('user_id', userId);
+    formData.append('name', namaProduk);
+    formData.append('price', hargaProduk);
+
+    // Konfigurasi permintaan POST menggunakan Fetch API
+    fetch('https://literate-zebra-production.up.railway.app/cart/add', {
+        method: 'POST',
+        body: formData, // Menggunakan formData sebagai body
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded' // Mengatur Content-Type
+        }
+    })
+    .then(response => {
+        if (response.status === 201) {
+            alert('Produk berhasil ditambahkaxn ke keranjang!');
+        } else {
+            alert('Terjadi kesalahan saat menambahkan produk ke keranjang.');
+        }
+    })
+    .catch(error => {
+        console.error('Terjadi kesalahan:', error);
+    });
+} 
+
+</script>
 </body>
 </html>

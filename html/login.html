@@ -24,7 +24,7 @@
       <div class="form-wrapper sign-in">
         <form
           method="POST"
-          action="https://solid-desire-production.up.railway.app/users/login"
+          action="https://literate-zebra-production.up.railway.app/users/login"
           id="myForm"
         >
           <h2>Log In</h2>
@@ -84,7 +84,8 @@
               success: function (result) {
                 console.log(result);
                 if (result.message === "Berhasil Login") {
-                  // Jika login berhasil, arahkan ke halaman home.html (di direktori yang sama)
+                  sessionStorage.setItem("userId", result.userId);
+                                    // Jika login berhasil, arahkan ke halaman home.html (di direktori yang sama)
                   window.location.href = "home2.html"; // Nama file home.html
                 } else {
                   // Tampilkan pesan kesalahan jika login gagal
